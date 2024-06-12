@@ -1,0 +1,22 @@
+.slideBackground{
+    background-color: #FFFFFF;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sildeContent{
+    background-color: #FFFFFF;
+    width: 100%;
+    max-width: 1926px;
+    height: auto;
+    box-sizing: border-box;
+    padding: 80px 240px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 90px;
+    
+}
+  
