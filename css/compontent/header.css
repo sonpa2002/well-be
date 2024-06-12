@@ -1,0 +1,122 @@
+:root{
+--darkGreen: #1E4B3D;
+--greenPattel: #547668;
+--lightGreen: #C0CBBE;
+--blackgray: #3D3D3D;
+--primaryColor: #31735E;
+--secondaryColor: #4BA35B;
+--black: #252525;
+}
+
+.header{
+height: 100%;
+width: 100%;
+margin-left: auto;
+margin-right: auto;
+color: var(--black);
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+background-color: white;
+
+}
+
+.header .header__content{
+padding: 20px 10px 20px 10px;
+height: 100px;
+width: 100%;
+background-color: var(--primaryColor);
+display: flex;
+justify-content: center;
+align-items: center;
+flex-direction: column;
+text-align: center;
+color:white;
+}
+
+.header .header__content p{
+font-size: 18px;
+line-height: 0;
+text-align: center;
+font-weight: 400;
+margin: 8px;
+}
+
+.header .header__content span{
+font-weight: 700;
+}
+
+.header .header__content h3{
+line-height: 0px;
+margin: 22px;
+}
+
+.header .header__navbar{
+    /* width: 100%; */
+    width: 1926px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid black;
+}
+
+.header .header__navbar .header__navbar--content{
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    gap: 16px;
+    flex: 1;
+    text-transform: uppercase;
+}
+
+.header .header__navbar .header__navbar--content p,
+.header .header__navbar .header__navbar--content a{
+    color: var(--primaryColor) !important;
+    font-weight: 600;
+    padding: 20px 15px 20px 15px;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.header .header__navbar .header__navbar--content p:hover,
+.header .header__navbar .header__navbar--content a:hover{
+    color: var(--secondaryColor) !important;
+}
+
+.header .header__navbar .header__navbar--search{
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    width: 100%;
+}
+
+.header__navbar--wrapper{
+    display: flex;
+    align-items: center;
+    width: 350px;
+    padding: 10px 20px 10px 20px;
+    border: 1px solid var(--blackgray);
+    color: var(--secondaryColor);
+    border-radius: 6px;
+    gap: 4px;
+}
+    
+
+.header .header__navbar .header__navbar--user{
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    gap: 16px;
+    flex: 1;
+}
+.header .header__navbar .header__navbar--user p,
+.header .header__navbar .header__navbar--user .fa-solid{
+    color: var(--primaryColor);
+    cursor: pointer;
+    font-size: 14px;
+}
+.header .header__navbar .header__navbar--user p,
+.header .header__navbar .header__navbar--user .fa-solid:hover{
+    color: var(--secondaryColor);
+}
