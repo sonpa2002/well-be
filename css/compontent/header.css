@@ -6,59 +6,57 @@
 --primaryColor: #31735E;
 --secondaryColor: #4BA35B;
 --black: #252525;
+--backgroundColor: #FDF4EFE0;
 }
 
 .header{
-height: 100%;
-width: 100%;
-margin-left: auto;
-margin-right: auto;
-color: var(--black);
-display: flex;
-flex-direction: column;
-justify-content: center;
-align-items: center;
-background-color: white;
-
+    height: 100%;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid var(--blackgray);
 }
 
 .header .header__content{
-padding: 20px 10px 20px 10px;
-height: 100px;
-width: 100%;
-background-color: var(--primaryColor);
-display: flex;
-justify-content: center;
-align-items: center;
-flex-direction: column;
-text-align: center;
-color:white;
+    padding: 20px 0px 20px 0px;
+    height: 100px;
+    width: 100%;
+    background-color: var(--primaryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color:white;
 }
 
 .header .header__content p{
-font-size: 18px;
-line-height: 0;
-text-align: center;
-font-weight: 400;
-margin: 8px;
+    font-size: 18px;
+    line-height: 0;
+    text-align: center;
+    font-weight: 400;
+    margin: 8px;
 }
 
 .header .header__content span{
-font-weight: 700;
+    font-weight: 700;
 }
 
 .header .header__content h3{
-line-height: 0px;
-margin: 22px;
+    line-height: 0px;
+    margin: 22px;
 }
 
 .header .header__navbar{
-    /* width: 100%; */
-    width: 1926px;
+    max-width: 1400px;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid black;
 }
 
 .header .header__navbar .header__navbar--content{
@@ -96,10 +94,14 @@ margin: 22px;
     align-items: center;
     width: 350px;
     padding: 10px 20px 10px 20px;
-    border: 1px solid var(--blackgray);
+    border: 1px solid var(--secondaryColor);
     color: var(--secondaryColor);
     border-radius: 6px;
     gap: 4px;
+}
+.header__navbar--wrapper:focus,
+.header__navbar--wrapper:hover{
+    border: 1px solid var(--primaryColor);
 }
     
 
