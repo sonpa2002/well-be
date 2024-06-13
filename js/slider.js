@@ -6,7 +6,7 @@ const sliderItems = [
     document.querySelector('.sliderMain .Item4')
 ];
 var arraySlider = ["sliderMain__smallItem Item1", "sliderMain__smallItem Item2", "sliderMain__smallItem Item3", "sliderMain__smallItem Item4"];
-var animateTime = 0.40; var IntervalTime = 1.00; var IntervalSliderID = 0;
+var animateTime = 0.40; var IntervalTime = 1.00; var IntervalSliderID = 0; var previousRandom = null;
 // console.log(Math.floor(IntervalTime*1000));
 function CustomSlider(SetAnimateTime, SetIntervalTime){
     animateTime = SetAnimateTime; IntervalTime = SetIntervalTime;
@@ -44,7 +44,54 @@ function fireSlider(SetAnimateTime, SetIntervalTime, arrPhoto, animateStyle){
             let sliderItemImg;
             for (let i = 0; i < sliderItems.length; i++) {
                 sliderItemImg = sliderItems[i].querySelector('img');
-                sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(`B${i + 1}.jpg`, (`${arrPhoto[0]}${i + 1}.jpg`)));
+                sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(/[A-G][1-4]\.jpg/g, (`${arrPhoto[0]}${i + 1}.jpg`)));
+            }
+            IntervalSliderID = setInterval(function (){
+                let takeSliderItem = sliderItems.shift();
+                sliderItems.push(takeSliderItem);
+        
+                for (let i = 0; i < sliderItems.length; i++) {
+                    sliderItems[i].setAttribute("class", arraySlider[i]);
+                }
+            }, Math.floor(IntervalTime*1000))
+        }
+        else
+        {
+            IntervalSliderID = setInterval(function (){
+                let takeSliderItem = sliderItems.shift();
+                sliderItems.push(takeSliderItem);
+        
+                for (let i = 0; i < sliderItems.length; i++) {
+                    sliderItems[i].setAttribute("class", arraySlider[i]);
+                }
+            }, Math.floor(IntervalTime*1000))
+        }
+    }
+    else if(animateStyle === "ChangePhoto-Random"){
+        if(arrPhoto.length > 1){
+            let choosePhoto = getRandomElement(arrPhoto);
+            let sliderItemImg;
+            IntervalSliderID = setInterval(function (){
+
+                let takeSliderItem = sliderItems.shift();
+                sliderItems.push(takeSliderItem);
+        
+                for (let i = 0; i < sliderItems.length; i++) {
+                    sliderItems[i].setAttribute("class", arraySlider[i]);
+                }
+
+                for (let i = 0; i < sliderItems.length; i++) {
+                    sliderItemImg = sliderItems[i].querySelector('img');
+                    sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(/[A-G][1-4]\.jpg/g, (`${arrPhoto[choosePhoto]}${i==0 ? 4 : i}.jpg`)));
+                }
+                choosePhoto = getRandomElement(arrPhoto);
+            }, Math.floor(IntervalTime*1000))
+        }
+        else if(arrPhoto.length === 1){
+            let sliderItemImg;
+            for (let i = 0; i < sliderItems.length; i++) {
+                sliderItemImg = sliderItems[i].querySelector('img');
+                sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(/[A-G][1-4]\.jpg/g, (`${arrPhoto[0]}${i + 1}.jpg`)));
             }
             IntervalSliderID = setInterval(function (){
                 let takeSliderItem = sliderItems.shift();
@@ -72,7 +119,7 @@ function fireSlider(SetAnimateTime, SetIntervalTime, arrPhoto, animateStyle){
             let sliderItemImg;
             for (let i = 0; i < sliderItems.length; i++) {
                 sliderItemImg = sliderItems[i].querySelector('img');
-                sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(`B${i + 1}.jpg`, (`${arrPhoto[0]}${i + 1}.jpg`)));
+                sliderItemImg.setAttribute('src', sliderItemImg.getAttribute("src").replace(/[A-G][1-4]\.jpg/g, (`${arrPhoto[0]}${i + 1}.jpg`)));
             }
         }
         IntervalSliderID = setInterval(function (){
@@ -89,5 +136,12 @@ function fireSlider(SetAnimateTime, SetIntervalTime, arrPhoto, animateStyle){
 function stopSlider(){
     clearInterval(IntervalSliderID);
 }
-
-fireSlider(0.4, 1.00, ["A","B","C","D","E","F","G"], "ChangePhoto");
+function getRandomElement(arr) {
+    let randomIndex;
+    do {
+        randomIndex = Math.floor(Math.random() * arr.length);
+    } while (randomIndex === previousRandom);
+    previousRandom = randomIndex;
+    return randomIndex;
+}
+fireSlider(0.4, 1.00, ["G"], "Default");
