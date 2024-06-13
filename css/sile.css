@@ -73,13 +73,13 @@
     width: 273px;
     height: 77px;
 }
-.sliderLabel p{
+/* .sliderLabel p{
     font-family: "Roboto";
     font-weight: 300;
     font-size: 16px;
     line-height: 20px;
     letter-spacing: normal;
-}
+} */
 .sliderMain{
     position: relative;
     width: calc(((100% - 90px) / 1000) * 594);
