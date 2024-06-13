@@ -1,4 +1,46 @@
-.slideBackground{
+/* hieu ưng slider */
+@keyframes sliderItem1 {
+    0% { left: 0; } 
+    100% { left: calc(((100% - 60px) / 100000 * 83783) + 60px); } 
+}
+@keyframes sliderItem2 {
+    0% { 
+        width: calc((100% - 60px) / 100000 * 51351);
+        aspect-ratio: 1 / 1.263;
+        top: 0;
+        transform: none;
+        border-radius: 15px;
+        left: calc(((100% - 60px) / 100000 * 16216) + 20px);} 
+    100% { 
+        width: calc((100% - 60px) / 100000 * 16216);
+        aspect-ratio: 1 / 3.5;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 30px;
+        left: 0;} 
+}
+@keyframes sliderItem3 {
+    0% { 
+        width: calc((100% - 60px) / 100000 * 16216);
+        aspect-ratio: 1 / 3.5;
+        top: 50%;
+        transform: translateY(-50%);
+        border-radius: 30px;
+        left: calc(((100% - 60px) / 100000 * 67567) + 40px);} 
+    100% { 
+        width: calc((100% - 60px) / 100000 * 51351);
+        aspect-ratio: 1 / 1.263;
+        top: 0;
+        transform: none;
+        border-radius: 15px;
+        left: calc(((100% - 60px) / 100000 * 16216) + 20px);} 
+}
+@keyframes sliderItem4 {
+    0% { left: calc(((100% - 60px) / 100000 * 83783) + 60px); } 
+    100% { left: calc(((100% - 60px) / 100000 * 67567) + 40px); } 
+}
+/* các css liên quan đến slider*/
+.sliderBackground{
     background-color: #FFFFFF;
     width: 100%;
     height: auto;
@@ -7,7 +49,7 @@
     flex-direction: row;
     justify-content: center;
 }
-.sildeContent{
+.silderContent{
     background-color: #FFFFFF;
     width: 100%;
     max-width: 1926px;
@@ -17,6 +59,89 @@
     display: flex;
     flex-direction: row;
     column-gap: 90px;
-    
+    align-items: center;
 }
-  
+.sliderLabel{
+    width: calc(((100% - 90px) / 1000) * 406);
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+}
+.sliderLabel img{
+    width: 273px;
+    height: 77px;
+}
+.sliderLabel p{
+    font-family: "Roboto";
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: normal;
+}
+.sliderMain{
+    position: relative;
+    width: calc(((100% - 90px) / 1000) * 594);
+    height: auto;
+}
+.sliderMain .sliderMain__container{
+    width: calc((100% - 60px) / 100000 * 51351);
+    height: auto;
+    aspect-ratio: 1 / 1.263;
+}
+.sliderMain .sliderMain__smallItem{
+    width: calc((100% - 60px) / 100000 * 16216);
+    height: auto;
+    aspect-ratio: 1 / 3.5;
+    position: absolute;
+    border-radius: 30px;
+    overflow: hidden;
+}
+.sliderMain .sliderMain__bigItem{
+    width: calc((100% - 60px) / 100000 * 51351);
+    height: auto;
+    aspect-ratio: 1 / 1.263;
+    position: absolute;
+    border-radius: 15px;
+    overflow: hidden;
+}
+.sliderMain .Item1{
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 4;
+    animation: sliderItem1 0.4s ease-in-out 0s 1 normal forwards;
+}
+.sliderMain .Item2{
+    left: calc(((100% - 60px) / 100000 * 16216) + 20px);
+    top: 0;
+    transform: none;
+    z-index: 3;
+    animation: sliderItem2 0.4s ease-in-out 0s 1 normal forwards;
+}
+.sliderMain .Item3{
+    left: calc(((100% - 60px) / 100000 * 67567) + 40px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    animation: sliderItem3 0.4s ease-in-out 0s 1 normal forwards;
+}
+.sliderMain .Item4{
+    left: calc(((100% - 60px) / 100000 * 83783) + 60px);
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 1;
+    animation: sliderItem4 0.4s ease-in-out 0s 1 normal forwards;
+}
+
+.sliderMain .sliderMain__smallItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.sliderMain .sliderMain__bigItem img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
