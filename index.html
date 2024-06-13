@@ -13,6 +13,13 @@
     <link rel="stylesheet" href="css/globalphase1.css">
     <link rel="stylesheet" href="css/compontent/header.css">
     <link rel="stylesheet" href="css/compontent/content.css">
+    <link rel="stylesheet" href="css/compontent/Home/section1.css">
+    <link rel="stylesheet" href="css/compontent/Home/section2.css">
+
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.css"/>
+    <!-- Add the slick-theme.css if you want default styling -->
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick-theme.css"/>
   </head>
   <body>
     <div class="loading"></div>
@@ -67,13 +74,85 @@
           <div class="bg__full--firstColor">
             <section class="main__section--second">
               <div class="second__content--left">
-                Sunny
+                <div class="left__box--content">
+
+                  <div class="buttonContent">
+                    <button type="button" class="Button">
+                      Mới nhất
+                    </button>
+                    <button type="button" class="Button">
+                        Xem nhiều nhất 
+                    </button>
+                  </div>
+
+                  <div class="textContent">
+                    <div class="titleBox">
+                      Tự tin và thành thạo với Khóa Học Tiếng Anh Đa Dạng!
+                    </div>
+                    <div class="date flex">
+                      <i class="fa-regular fa-calendar"></i>
+                      <p>27-6-2024</p>
+                    </div>
+
+                    <div class="subtitleBox">
+                      Tự tin giao tiếp Tiếng Anh với Khóa Học Đa Dạng! Tại đây, chúng tôi không chỉ tập trung vào việc rèn luyện.....
+                    </div>
+
+                    <div class="flexButton">
+                      <i class="fa-solid fa-arrow-left"></i>
+                      <i class="fa-solid fa-arrow-right"></i>
+                    </div>
+                  </div>
+                </div>
+                <div class="left__box--image">
+                  <div class="imageDiv__top">
+                    <img src="./assets/images/image__box1.jpeg" alt="">
+                  </div>
+                  <div class="imageDiv__bottom">
+                    <img src="./assets/images/image__box5.jpeg" alt="">
+                  </div>
+
+                  <button type="button" class="scrolldownDiv">
+                    Scroll down 
+                    <i class="fa-solid fa-arrow-down"></i> 
+                  </button>
+                </div>
               </div>
               <div class="second__content--right">
-                Sunny
+                <div class="right__box--content">
+                  <div class="titleBox">
+                    Chinh phục Tiếng Anh với Khóa Học Chuyên Sâu!
+                  </div>
+                  <div class="date flex">
+                    <i class="fa-regular fa-calendar"></i>
+                    <p>27-6-2024</p>
+                  </div>
+
+                  <div class="subtitleBox">
+                    Khám phá thế giới với Tiếng Anh! Khóa học của chúng tôi không chỉ cung cấp kiến thức vững chắc mà còn tạo điều kiện cho học viên thực hành và giao tiếp một cách tự tin. Với đội ngũ giáo viên giàu kinh nghiệm và phương pháp giảng dạy độc đáo....
+                  </div>
+
+                </div>
+
+                <div class="right__box--image">
+                  <img src="./assets/images/image__box6.jpeg" alt="">
+                </div>
               </div>
             </section>
           </div>
+          <!-- third section -->
+           <div class="bg__full--secondColor">
+              <section class="main__section--third">
+                  <div class="title">Cảm nhận học viên</div>
+
+
+                  <div class="slick">
+                        <div class="slick__carousel">
+                            <!-- Render by js render -->
+                        </div>
+                  </div>
+              </section>
+           </div>
         </section>
       </main>
       <footer class="footer"></footer>
@@ -83,5 +162,6 @@
     <script src="./js/fancybox.js"></script>
     <script src="./js/library.js"></script>
     <script src="js/main.js"></script>
+    <script type="text/javascript" src="//cdn.jsdelivr.net/gh/kenwheeler/slick@1.8.1/slick/slick.min.js"></script>
   </body>
 </html>

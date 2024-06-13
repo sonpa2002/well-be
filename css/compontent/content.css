@@ -1,154 +1,134 @@
 :root{
---darkGreen: #1E4B3D;
---greenPattel: #547668;
---lightGreen: #C0CBBE;
---blackgray: #3D3D3D;
---primaryColor: #31735E;
---secondaryColor: #4BA35B;
---black: #252525;
---backgroundColor: #FDF4EFE0;
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
 }
-    
-.main .main__container{
-    margin-left: auto;
-    margin-right: auto;
+
+.main .main__container .main__section--third{
     display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;    
     flex-direction: column;
-    }   
-    
-.main .main__container .bg__full--firstColor .main__section--first{
-    width: 100%;
+    gap: 1rem;
     max-width: 1400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    gap: 2rem;
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__title{
     width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    justify-content: center;
-    align-items: center;
 }
 
-.main .main__container .bg__full--firstColor .main__section--first .section__title .subtitle{
-    text-align: center;
-    width: 100%;
-    max-width: 700px;
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 2rem;
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .Button{
-    border: none;
-    outline: none;
-    text-transform: uppercase;
-    color: var(--black);
-    background-color: #fff;
-    font-weight: 700;
-    transition: all 0.5s ease;
-    cursor: pointer;
-    padding: 15px 30px 15px 30px;
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .Button:hover{
+.main__section--third .title{
     color: white;
-    background-color: var(--primaryColor);
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .active{
-    color: white;
-    background-color: var(--primaryColor);
-} 
-
-.main .main__container .bg__full--firstColor .main__section--first .section__content{
     width: 100%;
-    display: flex;
-    gap: 2rem;
-    justify-content: space-between;
-    align-items: center;
+    text-align: start;
 }
 
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box{
-    position: relative;
-    width: 325px;
-    height: 325px;
+
+.slick{
+    width:100%;
+    padding-top: 20px;
+    text-align:center;
+}
+.slick-slide{
+margin:25px;
+}
+
+.wrapper .slick-dots li button:before {
+font-size:22px;
+color:white;
+}
+
+.slick-arrow{
+padding: 10px;
+}
+
+.slick-prev{
+    left: -60px !important;
+}
+
+.slick-next{
+    right: -60px !important;
+}
+
+.slick-prev,
+.slick-next{
+    width: 50px !important;
+    height: 50px !important;
+}
+.slick-prev:before,
+.slick-next:before{
+    font-size: 50px !important;
+}
+.slick-dots li button:before{
+    content: '' !important;
+}
+
+
+.custom-dot {
+    display: block;
+    width: 22px;
+    height: 22px;
+    background: white;
+    border-radius: 50%;
+    border: 2px solid rgba(116, 241, 237, 1);
+    transition: background 0.3s ease, border-color 0.3s ease;
+}
+
+.slick-dots li.slick-active .custom-dot {
+    background: rgba(116, 241, 237, 1);  /* Active dot background color */
+    border-color: rgba(116, 241, 237, 1);
+}
+
+
+/* slick component render */
+
+  .slick__component{
+    max-width: 325px;
+    width: 100%;
+    height: 100%;
     border-radius: 20px;
-    overflow: hidden;
-}
+    background-color: #fff;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
 
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box img{
+  .slick__component .subtitleBox{
+    width: 100%;
+    text-align: start;
+    margin-bottom: 1rem;
+  }
+
+  .slick__component .slick__component--user{
+    display: flex;
+    gap: 1rem;
+    justify-content: start;
+    align-items: center;
+  }
+
+  .slick__component--user .imgDiv{
+    width: 70px;
+    height: 70px;
+    border-radius: 100%;
+    overflow: hidden;
+  }
+
+  .slick__component--user img{
     width: 100%;
     height: 100%;
     object-fit: cover;
-}
+  }
 
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv{
-    position: absolute;
-    top: 10px;
-    z-index: 10;
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    padding: 0 10px;
-    align-items: center;   
-}
-    
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv .primaryButton{
-    font-weight: 600;
-    transition: all 0.5s ease;
-    cursor: pointer;
-}
 
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv .primaryButton:hover{
-    background-color: var(--secondaryColor);
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--text{
-    position: absolute;
-    bottom: 10px;
-    z-index: 10;
-    width: 100%;
-    padding: 0 10px;
-    
-}
-
-.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--text
-.content__wrapper{
+  .slick__component--user .user__content{
     display: flex;
     flex-direction: column;
+    gap: 0.3rem;
     justify-content: start;
     align-items: start;
-    background-color: white;
-    border-radius: 20px;
-    padding: 20px;
-    gap: 1rem;
-}
-
-
-.main .main__container .bg__full--firstColor .main__section--second{
-    width: 100%;
-    max-width: 1400px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.second__content--left,
-.second__content--right{
-    flex: 1;
-    width: 100%;
-    border: 1px solid var(--primaryColor);
-} 
+  }
+  .user__content--name{
+    font-size: 16px;
+    font-weight: 600;
+  }

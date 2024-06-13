@@ -1,0 +1,187 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+    }
+        
+    
+    .main .main__container .main__section--second{
+        width: 100%;
+        /* height: 100%; */
+        height: 470px;
+        max-width: 1400px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+    
+    .second__content--left,
+    .second__content--right{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+        /* border: 1px solid var(--primaryColor); */
+        border-radius: 20px;
+        overflow: hidden;
+        padding: 10px;
+    } 
+    
+    .second__content--left{
+        background-color: rgba(243, 243, 243, 0.9804);
+        color: var(--black);
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    
+    .second__content--left .left__box--content{
+        flex: 1;
+        display: flex;
+        width: 100%;
+        height: 100%;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: start;
+    }
+    
+    .buttonContent{
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+        padding: 0 10px;
+    }
+    .textContent{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 20px 10px;
+    }
+    
+    .textContent .flexButton{
+        padding: 20px 0 20px 0;
+        display: flex;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .second__content--left .left__box--image{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: start;
+        position: relative;
+    }
+    
+    .second__content--left .left__box--image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .second__content--left .left__box--image .imageDiv__top,
+    .second__content--left .left__box--image .imageDiv__bottom{
+        width: 100%;
+        overflow: hidden;
+        border-radius: 20px;
+    }
+    
+    .imageDiv__top{
+        height: 70%;
+    }
+    
+    .imageDiv__bottom{
+        height: 30%;
+    }
+    
+    .scrolldownDiv{
+        position: absolute;
+        top: 61%;
+        right: 50%;
+        left: 50%; 
+        transform: translateX(-50%);   
+        z-index: 10;
+    
+        width: 70px;
+        height: 70px;
+        display: flex;
+        gap: 0.3rem;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        font-weight: 700;
+        border: 1px solid transparent;
+        border-radius: 100%;
+        padding: 40px;
+        background-color: rgba(255, 255, 255, 0.5);
+        transition: all 0.3s ease;
+        cursor: pointer;
+    }
+    
+    .scrolldownDiv:hover{
+        background-color: var(--primaryColor);
+        border: 1px solid white;
+        color: white;
+    }
+    
+    
+    
+    .second__content--right{
+        background-color: var(--primaryColor);
+        display: flex;
+        width: 100%;
+        height: 100%;
+        justify-content: space-between;
+        align-items: start;
+        gap: 1rem;
+    }
+    
+    .second__content--right .right__box--image,
+    .second__content--right .right__box--content{
+        flex: 1;
+        width: 100%;
+        height: 100%;
+    }
+    
+    .second__content--right .right__box--image{
+        width: 100%;
+        height: 100%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .second__content--right .right__box--image img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    
+    .second__content--right .right__box--content{
+        display: flex;
+        flex-direction: column;
+        padding: 20px;
+        color: white;
+        align-items: start;
+        gap: 0.5rem;
+    }
+    
+    .second__content--right .right__box--content .titleBox{
+        color: white;
+        font-size: 32px;
+    }
+    
+    .second__content--right .right__box--content .subtitleBox{
+        color: white;
+    }

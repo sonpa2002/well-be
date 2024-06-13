@@ -1,0 +1,135 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+}
+
+.main .main__container{
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;    
+    flex-direction: column;
+    }   
+    
+.main .main__container .bg__full--firstColor .main__section--first{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__title .subtitle{
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .Button{
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    color: var(--black);
+    background-color: #fff;
+    font-weight: 700;
+    transition: all 0.5s ease;
+    cursor: pointer;
+    padding: 15px 30px 15px 30px;
+}
+
+
+.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .active,
+.main .main__container .bg__full--firstColor .main__section--first .section__title .section__btndiv .Button:hover{
+    color: white;
+    background-color: var(--primaryColor);
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content{
+    width: 100%;
+    display: flex;
+    gap: 2rem;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box{
+    position: relative;
+    width: 325px;
+    height: 325px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv{
+    position: absolute;
+    top: 10px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;   
+}
+    
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv .primaryButton{
+    font-weight: 600;
+    transition: all 0.5s ease;
+    cursor: pointer;
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--btnDiv .primaryButton:hover{
+    background-color: var(--secondaryColor);
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--text{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    width: 100%;
+    padding: 0 10px;
+    
+}
+
+.main .main__container .bg__full--firstColor .main__section--first .section__content .content__box .content__box--text
+.content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    gap: 1rem;
+}
