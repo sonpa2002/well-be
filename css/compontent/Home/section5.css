@@ -1,0 +1,137 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+}
+
+.main .main__container .main__section--fifth{
+  width: 100%;
+  height: 600px;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2rem;
+}
+
+
+.fifth__content--right,
+.fifth__content--left{
+  display: flex;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  gap: 2rem;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.fifth__content--left .left__box--content{
+  flex: 1;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.fifth__content--left .textContent{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 1rem;
+  padding: 20px 10px;
+}
+
+.fifth__content--left .textContent .textContent--title{
+  font-family: 'play-700';
+  font-size: 52px;
+  line-height: 70px;
+}
+
+.fifth__content--left .textContent .subtitleBox{
+  font-size: 18px;
+}
+
+.fifth__content--left .textContent .secondaryButton{
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.2s ease;
+  font-size: 18px;
+  width: 180px;
+}
+
+.fifth__content--left .textContent .secondaryButton:hover{
+  background-color: var(--primaryColor);
+}
+
+
+.fifth__content--right .right__box--image,
+.fifth__content--left .left__box--image{
+  flex: 1;
+  width: 100%;
+  height: 600px;
+  border-radius: 20px;
+  overflow: hidden;
+  position: relative;
+}
+
+.fifth__content--right .right__box--image .buttonDiv,
+.fifth__content--left .left__box--image .buttonDiv{
+  position: absolute;
+    top: 10px;
+    z-index: 10;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    padding: 0 10px;
+    align-items: center;
+    transition: all 0.3s ease;   
+}
+
+.buttonDiv button{
+  transition: all 0.3s ease;
+}
+
+.fifth__content--right .right__box--image .buttonDiv button:hover,
+.fifth__content--left .left__box--image .buttonDiv button:hover{
+  background-color: var(--secondaryColor);
+}
+
+.fifth__content--right .right__box--image img,
+.fifth__content--left .left__box--image img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.main__section--fifth .content__box--text{
+  position: absolute;
+  bottom: 10px;
+  z-index: 10;
+  width: 100%;
+  padding: 0 10px;
+}
+
+.main__section--fifth .content__box--text
+.content__wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: start;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  padding: 20px;
+  gap: 1rem;
+}

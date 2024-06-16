@@ -39,7 +39,7 @@
         width: 100%;
         height: 100%;
         justify-content: space-between;
-        gap: 1rem;
+        gap: 2rem;
     }
     
     .second__content--left .left__box--content{
@@ -145,7 +145,7 @@
         height: 100%;
         justify-content: space-between;
         align-items: start;
-        gap: 1rem;
+        gap: 2rem;
     }
     
     .second__content--right .right__box--image,
