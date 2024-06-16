@@ -1,0 +1,135 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+  }
+  
+  .news{
+    width: 100%;
+    max-width: 1400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+  }
+  
+  
+  .news__slick--component{
+    max-width: 450px;
+    max-height: 450px;
+    width: 100%;
+    height: 100%;
+    border-radius: 20px;
+    overflow: hidden;
+    position: relative;
+  }
+  
+  .news .news__title{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .news .news__title .subtitle{
+    text-align: center;
+    width: 100%;
+    max-width: 700px;
+  }
+  
+  
+  .news .news__title .news__slick--component img{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  }
+  
+  
+  .buttonDiv{
+    position: absolute;
+      top: 10px;
+      z-index: 10;
+      display: flex;
+      width: 100%;
+      justify-content: space-between;
+      padding: 0 10px;
+      align-items: center;
+      transition: all 0.3s ease;   
+  }
+  
+  .buttonDiv button{
+    transition: all 0.3s ease;
+  }
+  
+  .buttonDiv button:hover{
+    background-color: var(--secondaryColor);
+  }
+  
+  .news .content__box--text{
+    position: absolute;
+    bottom: 10px;
+    z-index: 10;
+    width: 100%;
+    padding: 0 10px;
+  }
+  
+  .news .content__box--text
+  .content__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 20px;
+    padding: 20px;
+    gap: 1rem;
+  }
+  
+  
+   /* css slick */
+  .news__slick{
+    width:100%;
+    padding-top: 20px;
+    text-align:start;
+  }
+  
+  .news__slick .slick-slide{
+  margin:25px;
+  }
+  
+  .news__slick .slick-arrow{
+  padding: 10px;
+  }
+  
+  .news__slick .slick-prev{
+    left: -60px !important;
+  }
+  
+  .news__slick .slick-next{
+    right: -60px !important;
+  }
+  
+  .news__slick .slick-prev,
+  .news__slick .slick-next{
+    width: 50px !important;
+    height: 50px !important;
+  }
+  .news__slick .slick-prev:before,
+  .news__slick .slick-next:before{
+    font-size: 50px !important;
+    color: var(--primaryColor);
+  }
+  .news__slick .slick-dots li button:before{
+    content: '' !important;
+  }
+  
+  /* slick component render */
+  

@@ -9,7 +9,7 @@
     --backgroundColor: #FDF4EFE0;
 }
 
-.main .main__container .main__section--fifth{
+.blog{
   width: 100%;
   height: 600px;
   max-width: 1400px;
@@ -20,8 +20,8 @@
 }
 
 
-.fifth__content--right,
-.fifth__content--left{
+.blog__content--right,
+.blog__content--left{
   display: flex;
   width: 100%;
   height: 100%;
@@ -34,7 +34,7 @@
   overflow: hidden;
 }
 
-.fifth__content--left .left__box--content{
+.blog__content--left .left__box--content{
   flex: 1;
   display: flex;
   width: 100%;
@@ -44,7 +44,7 @@
   align-items: start;
 }
 
-.fifth__content--left .textContent{
+.blog__content--left .textContent{
   display: flex;
   flex-direction: column;
   align-items: start;
@@ -52,17 +52,17 @@
   padding: 20px 10px;
 }
 
-.fifth__content--left .textContent .textContent--title{
+.blog__content--left .textContent .textContent--title{
   font-family: 'play-700';
   font-size: 52px;
   line-height: 70px;
 }
 
-.fifth__content--left .textContent .subtitleBox{
+.blog__content--left .textContent .subtitleBox{
   font-size: 18px;
 }
 
-.fifth__content--left .textContent .secondaryButton{
+.blog__content--left .textContent .secondaryButton{
   font-weight: 600;
   display: flex;
   align-items: center;
@@ -72,13 +72,13 @@
   width: 180px;
 }
 
-.fifth__content--left .textContent .secondaryButton:hover{
+.blog__content--left .textContent .secondaryButton:hover{
   background-color: var(--primaryColor);
 }
 
 
-.fifth__content--right .right__box--image,
-.fifth__content--left .left__box--image{
+.blog__content--right .right__box--image,
+.blog__content--left .left__box--image{
   flex: 1;
   width: 100%;
   height: 600px;
@@ -87,8 +87,8 @@
   position: relative;
 }
 
-.fifth__content--right .right__box--image .buttonDiv,
-.fifth__content--left .left__box--image .buttonDiv{
+.blog__content--right .right__box--image .buttonDiv,
+.blog__content--left .left__box--image .buttonDiv{
   position: absolute;
     top: 10px;
     z-index: 10;
@@ -104,19 +104,19 @@
   transition: all 0.3s ease;
 }
 
-.fifth__content--right .right__box--image .buttonDiv button:hover,
-.fifth__content--left .left__box--image .buttonDiv button:hover{
+.blog__content--right .right__box--image .buttonDiv button:hover,
+.blog__content--left .left__box--image .buttonDiv button:hover{
   background-color: var(--secondaryColor);
 }
 
-.fifth__content--right .right__box--image img,
-.fifth__content--left .left__box--image img{
+.blog__content--right .right__box--image img,
+.blog__content--left .left__box--image img{
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.main__section--fifth .content__box--text{
+.blog .content__box--text{
   position: absolute;
   bottom: 10px;
   z-index: 10;
@@ -124,7 +124,7 @@
   padding: 0 10px;
 }
 
-.main__section--fifth .content__box--text
+.blog .content__box--text
 .content__wrapper{
   display: flex;
   flex-direction: column;

@@ -10,7 +10,7 @@
     }
 
     
-.main .main__container .main__section--third{
+.feeling{
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -18,7 +18,7 @@
     width: 100%;
 }
 
-.main__section--third .title{
+.feeling .title{
     color: white;
     width: 100%;
     text-align: start;

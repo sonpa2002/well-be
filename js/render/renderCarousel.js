@@ -77,3 +77,7 @@ const carouselData = [
     `
   })
   renderCarousel.innerHTML = rendercarousel.join('');
+
+
+
+ 
