@@ -1,0 +1,202 @@
+@keyframes RegisterPopUp {
+    0% { height: 0px;
+        opacity: 0.1; } 
+    100% { height: 762px;
+        opacity: 1; } 
+}
+
+.RegisterPopUp{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    left: 0px;
+    top: 0px;
+    margin: 0;
+    padding: 0;
+    background-color: rgba(0, 0, 0, 0.35);
+    z-index: 999;
+    overflow-y: auto;
+    display: none;
+}
+.RegisterPopUpContent {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    background: #FFFFFF;
+    padding: 0px 20px 30px 20px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    width: 390px;
+    height: auto;
+    max-height: 770px;
+    justify-content: flex-end;
+    align-items: center;
+    box-sizing: border-box;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+    animation: RegisterPopUp 0.3s ease-in-out 0s 1 normal forwards;
+}
+.RegisterPopUpContent__title{
+    width: 100%;
+    height: 46px;
+    box-sizing: border-box;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.RegisterPopUpContent__title--text{
+    width: auto;
+    height: 100%;
+    padding: 20px 15px 10px 15px;
+    color: #31735E;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 16px;
+}
+.RegisterPopUpContent__title i{
+    width: auto;
+    height: 100%;
+    padding: 20px 15px 10px 15px;
+    color: #31735E;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 900;
+}
+.RegisterPopUpContent__img{
+    width: 100%;
+    height: 120px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+.RegisterPopUpContent__userName,
+.RegisterPopUpContent__password,
+.RegisterPopUpContent__email,
+.RegisterPopUpContent__confirmpassword{
+    box-sizing: border-box;
+    width: 100%;
+    height: 82px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+}
+.RegisterPopUpContent__userName span,
+.RegisterPopUpContent__password span,
+.RegisterPopUpContent__email span,
+.RegisterPopUpContent__confirmpassword span{
+    color: #31735E;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 16px;
+}
+.RegisterPopUpContent__userName input,
+.RegisterPopUpContent__email input{
+    border: 1px solid #3D3D3D;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px 15px;
+    color: #31735E;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 16px;
+}
+.RegisterPopUpContent__userName input::placeholder,
+.RegisterPopUpContent__password input::placeholder,
+.RegisterPopUpContent__email input::placeholder,
+.RegisterPopUpContent__confirmpassword input::placeholder{
+    color: rgba(49, 115, 94, 0.2);
+}
+.RegisterPopUpContent__password--custom,
+.RegisterPopUpContent__confirmpassword--custom{
+    border: 1px solid #3D3D3D;
+    width: 100%;
+    height: 56px;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 20px 15px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 10px;
+    align-items: center;
+}
+.RegisterPopUpContent__password--custom input,
+.RegisterPopUpContent__confirmpassword--custom input{
+    border: none;
+    /* width: ; */
+    height: 100%;
+    box-sizing: border-box;
+    color: #31735E;
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 16px;
+}
+.RegisterPopUpContent__password--custom i,
+.RegisterPopUpContent__confirmpassword--custom i{
+    color: rgba(49, 115, 94, 0.2);
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 14px;
+}
+.RegisterPopUpContent__userName input:focus,
+.RegisterPopUpContent__password input:focus,
+.RegisterPopUpContent__email input:focus,
+.RegisterPopUpContent__confirmpassword input:focus{
+    outline: none;
+}
+
+.RegisterPopUpContent__line{
+    width: 100%;
+    height: 0;
+    border-bottom: 1px solid rgba(0, 0, 0, 1);
+}
+.RegisterPopUpContent__RegisterButton{
+    width: 100%;
+    height: 61px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    background-color: rgba(49, 115, 94, 1);
+    border-radius: 10px;
+    color: rgba(255, 255, 255, 1);
+    font-size: 18px;
+    font-family: "Roboto";
+    font-weight: 600;
+    line-height: 21px;
+}
+.RegisterPopUpContent__HaveAccount{
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.RegisterPopUpContent__HaveAccount--Question{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 400;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+}
+.RegisterPopUpContent__HaveAccount--LinkSignin{
+    font-size: 14px;
+    font-family: "Roboto";
+    font-weight: 700;
+    line-height: 16px;
+    color: rgba(61, 61, 61, 1);
+    text-decoration: underline;
+    white-space: nowrap;
+}
+.RegisterPopUpContent__password--custom i:hover,
+.RegisterPopUpContent__confirmpassword--custom i:hover,
+.RegisterPopUpContent__title i:hover,
+.RegisterPopUpContent__RegisterButton:hover,
+.RegisterPopUpContent__HaveAccount:hover{
+    cursor: pointer;
+}

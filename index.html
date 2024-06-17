@@ -30,8 +30,10 @@
 
     <link rel="stylesheet" href="/css/slider.css" />
 
-    <link rel="stylesheet" href="/css/SelectSigninOrRegisterPopUp.css" />
-    <link rel="stylesheet" href="/css/SelectSigninOrRegisterPopUp.css" />
+    <link rel="stylesheet" href="css/SelectSigninOrRegisterPopUp.css" />
+    <link rel="stylesheet" href="css/SelectPagePopUp.css" />
+    <link rel="stylesheet" href="css/SigninPopUp.css" />
+    <link rel="stylesheet" href="css/RegisterPopUp.css" />
   </head>
   <body>
     <div class="loading"></div>
@@ -479,6 +481,76 @@
         <span class="Register">ĐĂNG KÝ</span>
       </div>
     </div>
+    <div class="SelectPage_PopUpContent">
+      <span class="course">KHÓA HỌC</span>
+      <span class="Workshop">WORKSHOP</span>
+      <span class="retreat">RETREAT</span>
+      <span class="community">CỘNG ĐỒNG</span>
+    </div>
+    <div class="SigninPopUp">
+      <div class="SigninPopUpContent">
+        <div class="SigninPopUpContent__title">
+          <span class="SigninPopUpContent__title--text">ĐĂNG NHẬP</span>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <img class="SigninPopUpContent__img" src="img/slider_A1.jpg" alt="imgPopup"/>
+        <div class="SigninPopUpContent__userName">
+          <span>Tài khoản</span>
+          <input type="text" placeholder="Mời nhập tài khoản"/>
+        </div>
+        <div class="SigninPopUpContent__password">
+          <span>Mật khẩu</span>
+          <div class="SigninPopUpContent__password--custom">
+            <input type="password" placeholder="Mời nhập mật khẩu"/>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+        </div>
+        <span class="SigninPopUpContent__forgotpass">Quên mật khẩu</span>
+        <div class="SigninPopUpContent__line"></div>
+        <button class="SigninPopUpContent__SigninButton">Đăng nhập</button>
+        <div class="SigninPopUpContent__NoAccount">
+          <span class="SigninPopUpContent__NoAccount--Question">Bạn chưa có tài khoản?&nbsp;</span>
+          <span class="SigninPopUpContent__NoAccount--LinkCreate">hãy nhấn vào đây</span>
+        </div>
+      </div>
+    </div>
+    <div class="RegisterPopUp">
+      <div class="RegisterPopUpContent">
+        <div class="RegisterPopUpContent__title">
+          <span class="RegisterPopUpContent__title--text">ĐĂNG KÝ</span>
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+        <img class="RegisterPopUpContent__img" src="img/slider_A1.jpg" alt="imgPopup"/>
+        <div class="RegisterPopUpContent__userName">
+          <span>Tài khoản</span>
+          <input type="text" placeholder="Mời nhập tài khoản"/>
+        </div>
+        <div class="RegisterPopUpContent__email">
+          <span>Email</span>
+          <input type="email" placeholder="Mời nhập email"/>
+        </div>
+        <div class="RegisterPopUpContent__password">
+          <span>Mật khẩu</span>
+          <div class="RegisterPopUpContent__password--custom">
+            <input type="password" placeholder="Mời nhập mật khẩu"/>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+        </div>
+        <div class="RegisterPopUpContent__confirmpassword">
+          <span>Nhập lại mật khẩu</span>
+          <div class="RegisterPopUpContent__confirmpassword--custom">
+            <input type="password" placeholder="Mời nhập lại mật khẩu"/>
+            <i class="fa-regular fa-eye"></i>
+          </div>
+        </div>
+        <div class="RegisterPopUpContent__line"></div>
+        <button class="RegisterPopUpContent__RegisterButton">Đăng ký</button>
+        <div class="RegisterPopUpContent__HaveAccount">
+          <span class="RegisterPopUpContent__HaveAccount--Question">Bạn đã có tài khoản?&nbsp;</span>
+          <span class="RegisterPopUpContent__HaveAccount--LinkSignin">hãy nhấn vào đây</span>
+        </div>
+      </div>
+    </div>
 
     <script src="./js/jquery.js"></script>
     <script src="./js/slick.js"></script>
@@ -500,5 +572,8 @@
 
     <script src="js/popupfunction.js"></script>
     <script src="js/SelectSigninOrRegisterPopUp.js"></script>
+    <script src="js/SelectPagePopUp.js"></script>
+    <script src="js/SigninPopUp.js"></script>
+    <script src="js/RegisterPopUp.js"></script>
   </body>
 </html>
