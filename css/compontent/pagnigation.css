@@ -1,0 +1,42 @@
+:root{
+    --darkGreen: #1E4B3D;
+    --greenPattel: #547668;
+    --lightGreen: #C0CBBE;
+    --blackgray: #3D3D3D;
+    --primaryColor: #31735E;
+    --secondaryColor: #4BA35B;
+    --black: #252525;
+    --backgroundColor: #FDF4EFE0;
+  }
+
+  .panigation{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+
+  .panigation button {
+    background-color: var(--primaryColor);
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.panigation .page-numbers button {
+    background-color: var(--backgroundColor);
+    color: var(--primaryColor);
+    border: 1px solid var(--primaryColor);
+    border-radius: 5px;
+    padding: 10px 15px;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.panigation .page-numbers button.active {
+    background-color: var(--primaryColor);
+    color: #fff;
+}
+
