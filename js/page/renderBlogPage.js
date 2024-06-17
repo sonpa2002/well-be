@@ -26,7 +26,7 @@
         const end = start + blogsPerPage;
         const blogsToRender = blogsData.slice(start, end).map(data => {
             return `
-                <a href='/blogdetail' key=${data.id} class="blog__component">
+                <a href='/blogdetail.html' key=${data.id} class="blog__component">
                     <img src='../assets/images/blog/blogbox/blog__box${data.id}.jpeg' alt="bg">
                     <div class="buttonDiv">
                         <button type="button" class="primaryButton">Bài viết</button>

@@ -26,7 +26,7 @@
         const end = start + newsPerPage;
         const newsToRender = newsData.slice(start, end).map(data => {
             return `
-                <a href='/newsdetail' key=${data.id} class="news__component">
+                <a href='/newsdetail.html' key=${data.id} class="news__component">
                     <img src='../assets/images/blog/blogbox/blog__box${data.id}.jpeg' alt="bg">
                     <div class="buttonDiv">
                         <button type="button" class="primaryButton">Bài viết</button>
