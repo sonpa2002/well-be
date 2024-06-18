@@ -1,0 +1,1 @@
+fireSlider(0.4, 1.00, ["A","B","C","D","E","F","G"], "ChangePhoto");

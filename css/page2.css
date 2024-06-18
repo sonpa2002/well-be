@@ -126,3 +126,95 @@
     font-weight: 400;
     line-height: 24px;
 }
+/*-----------------------------------*/
+.lecturersBg{
+    background-color: #31735E;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.lecturersContent{
+    background-color: #31735E;
+    width: 100%;
+    max-width: 1926px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    padding: 50px 0;
+    row-gap: 60px;
+    align-items: center;
+}
+.lecturers__text{
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    row-gap: 12px;
+}
+.lecturers__text span{
+    color: #FFFFFF;
+    font-size: 68px;
+    font-family: 'play-700';
+    font-weight: 700;
+    line-height: 91px;
+    text-align: center;
+}
+.lecturers__text p{
+    color: #FFFFFF;
+    font-size: 20px;
+    font-family: 'mon-400';
+    font-weight: 400;
+    line-height: 26px;
+    text-align: center;
+    padding: 0 300px;
+}
+.lecturers__items{
+    width: 100%;
+    max-width: 1440px;
+    height: auto;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+.lecturers__items .item{
+    width: calc((100% - 90px) / 4);
+    height: auto;
+    aspect-ratio: 1 / 1.343;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+.lecturers__items .item .item__topbar{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+.lecturers__items .item .item__topbar span{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    color: #FFFFFF;
+    font-size: 14px;
+    line-height: 16px;
+    font-family: 'play-700';
+    font-weight: 700;
+}
+.lecturers__items .item .item__topbar i{
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.8);
+    border-radius: 100px;
+    color: #292929;
+    font-size: 14px;
+    line-height: 14px;
+    font-weight: 900;
+}
