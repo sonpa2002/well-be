@@ -31,7 +31,7 @@ const newsData = [
   const renderNews = document.querySelector('.news__slick--carousel');
   const rendernews = newsData.map((data) => {
     return `
-       <div key=${data.id} class="news__slick--component">
+       <a href='/newsdetail.html' key=${data.id} class="news__slick--component">
                     <img src=${data.image} alt="bg">
 
 
@@ -59,7 +59,7 @@ const newsData = [
                         </div>
                       </div>
                     </div>
-                  </div>
+                  </a>
     `
   })
   renderNews.innerHTML = rendernews.join('');
