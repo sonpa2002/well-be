@@ -63,6 +63,23 @@
     padding: 15px 30px 15px 30px;
 }
 
+@media screen and (max-width: 550px) {
+    .main__section--first .section__title .section__btndiv{
+        gap: 1rem;
+    }
+
+    .main__section--first .section__title .section__btndiv .Button{
+        padding: 10px 20px 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .main__section--first .section__title .section__btndiv .Button{
+        padding: 5px 10px 5px 10px;
+        font-size: 12px;
+    }
+}
 
  .main__section--first .section__title .section__btndiv .active,
  .main__section--first .section__title .section__btndiv .Button:hover{
@@ -77,6 +94,8 @@
     justify-content: space-between;
     align-items: center;
 }
+
+
 
  .main__section--first .section__content .content__box{
     position: relative;
@@ -132,4 +151,76 @@
     border-radius: 20px;
     padding: 20px;
     gap: 1rem;
+}
+
+@media screen and (max-width: 1400px) {
+    .main__section--first .section__content{
+        width: 100%;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section--first .section__content .content__box{
+        align-self: center;
+        justify-self: center;
+        position: relative;
+        width: 525px;
+        height: 525px;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+}
+
+
+@media screen and (max-width: 1200px) {
+    .main__section--first .section__content{
+        width: 100%;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section--first .section__content .content__box{
+        width: 425px;
+        height: 425px;
+    }
+}
+
+@media screen and (max-width: 950px) {
+    .main__section--first .section__content .content__box{
+        width: 325px;
+        height: 325px;
+    }
+}
+
+@media screen and (max-width: 750px) {
+    .main__section--first .section__content .content__box{
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@media screen and (max-width: 650px) {
+    .main__section--first .section__content{
+        width: 100%;
+        display: grid;
+        gap: 2rem;
+        grid-template-columns: repeat(1, 1fr);
+        align-items: center;
+        justify-content: center;
+    }
+    .main__section--first .section__content .content__box{
+        width: 425px;
+        height: 425px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .main__section--first .section__content .content__box{
+        width: 325px;
+        height: 325px;
+    }
 }
