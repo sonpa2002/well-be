@@ -143,3 +143,33 @@
     height: 100%;
     object-fit: cover;
 }
+
+@media screen and (max-width: 500px) {
+    .silderContent{
+        background-color: #FFFFFF;
+        width: 100%;
+        max-width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: row;
+        padding: 60px 20px;
+        column-gap: 90px;
+        row-gap: 30px;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+    .sliderLabel {
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        display: flex;
+        flex-direction: column;
+        row-gap: 20px;
+    }
+    .sliderMain {
+        position: relative;
+        width: 100%;
+        height: auto;
+    }
+}
