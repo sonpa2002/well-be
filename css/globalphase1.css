@@ -264,7 +264,14 @@ p{
     letter-spacing: -4%;
     color: var(--blackgray);
 }
-
+.ads-slider{
+    /* display: none; */
+    visibility: hidden;
+}
+.ads-slider-active{
+    /* display: block; */
+    visibility: visible;
+}
 
 .Button{
     padding: 10px 30px 10px 30px;
