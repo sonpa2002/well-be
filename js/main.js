@@ -167,3 +167,4 @@ $(document).ready(function(){
 
 
   fireSlider(0.4, 1.00, ["G"], "Default");
+  
