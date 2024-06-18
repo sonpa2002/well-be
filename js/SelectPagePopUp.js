@@ -7,8 +7,8 @@ let WellbeSelect = document.querySelector('.header__navbar--content a[href="/ind
 WellbeSelect.addEventListener("mouseenter", function(event) {
     event.preventDefault();
     let position_WellbeSelect = WellbeSelect.getBoundingClientRect();
-    let SelectPage_PopUpContent_Left = (position_WellbeSelect.left).toFixed(2);
-    let SelectPage_PopUpContent_Top = (position_WellbeSelect.top + 62).toFixed(2);
+    let SelectPage_PopUpContent_Left = (position_WellbeSelect.left - 14).toFixed(2);
+    let SelectPage_PopUpContent_Top = (position_WellbeSelect.top + 55).toFixed(2);
 
     let SelectPage_PopUpContent = document.querySelector(".SelectPage_PopUpContent");
     SelectPage_PopUpContent.style.top = SelectPage_PopUpContent_Top + "px";
