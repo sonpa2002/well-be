@@ -27,6 +27,29 @@
     font-size: 12px;
     padding: 20px 0 20px 0;
   }
+@media screen and (max-width: 1400px){
+  .breakcrums__container{
+    margin-top: 12px;
+    padding: 0 40px;
+  
+  }
+}
+
+@media screen and (max-width: 1000px){
+  .breakcrums__container{
+    margin-top: 12px;
+    padding: 0 20px;
+  
+  }
+}
+@media screen and (max-width: 800px){
+  .breakcrums__container{
+    margin-top: 12px;
+    padding: 0;
+  
+  }
+}
+
   .breakcrums__container i,
   .breakcrums__container a{
     color: var(--primaryColor);
