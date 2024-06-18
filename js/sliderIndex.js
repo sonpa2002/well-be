@@ -9,11 +9,13 @@ var arraySlider = ["sliderMain__smallItem Item1", "sliderMain__smallItem Item2",
 var animateTime = 0.40; var IntervalTime = 1.00; var IntervalSliderID = 0; var previousRandom = null;
 // console.log(Math.floor(IntervalTime*1000));
 
-let adsCourseHeight =  sliderItems[1].querySelector('.ads-slider .ads-course').getBoundingClientRect().height;
+let adsCourseHeight =  sliderItems[1].querySelector('div .ads-course').getBoundingClientRect().height;
+console.log(adsCourseHeight);
 for (let i = 0; i < sliderItems.length; i++) {
-    let adsCourseobj =  sliderItems[i].querySelector('.ads-slider .ads-course');
+    let adsCourseobj =  sliderItems[i].querySelector('div .ads-course');
     adsCourseobj.style.maxHeight =adsCourseHeight.toFixed(2) + "px";
     adsCourseobj.style.minHeight =adsCourseHeight.toFixed(2) + "px";
+    sliderItems[i].querySelector('div').setAttribute("class", "ads-slider");
 }
 
 function CustomSlider(SetAnimateTime, SetIntervalTime){

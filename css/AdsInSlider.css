@@ -1,8 +1,8 @@
 .ads-slider{
-    /* display: none; */
-    visibility: hidden;
+    display: none;
+    /* visibility: hidden; */
 }
 .ads-slider-active{
-    /* display: block; */
-    visibility: visible;
+    display: block;
+    /* visibility: visible; */
 }
