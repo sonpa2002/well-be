@@ -1,0 +1,42 @@
+@keyframes SelectPage_PopUpContent {
+    0% { height: 0px; } 
+    100% { height: 226px; } 
+}
+
+
+.SelectPage_PopUpContent {
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+    width: auto;
+    height: auto;
+    max-width: 120px;
+    max-height: 230px;
+    background: #FFFFFF;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    position: absolute;
+    top: 162px;
+    left: 75px;
+    overflow: hidden;
+    z-index: 999;
+    display: none;
+    animation: SigninPopUp 0.3s ease-in-out 0s 1 normal forwards;
+}
+.SelectPage_PopUpContent .course,
+.SelectPage_PopUpContent .Workshop,
+.SelectPage_PopUpContent .retreat,
+.SelectPage_PopUpContent .community{
+    color: #31735E;
+    font-family: "Roboto";
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 16.41px;
+    padding: 20px 15px;
+    white-space: nowrap;
+}
+.SelectPage_PopUpContent .course:hover,
+.SelectPage_PopUpContent .Workshop:hover,
+.SelectPage_PopUpContent .retreat:hover,
+.SelectPage_PopUpContent .community:hover{
+    cursor: pointer;
+}

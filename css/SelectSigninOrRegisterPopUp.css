@@ -1,3 +1,8 @@
+@keyframes SOR_PopUpContent {
+    0% { height: 0px; } 
+    100% { height: 113px; } 
+}
+
 .SelectSigninOrRegisterPopUp{
     position: fixed;
     width: 100%;
@@ -21,9 +26,10 @@
     flex-direction: column;
     box-sizing: border-box;
     position: absolute;
-    top: 161px;
+    top: 162px;
     left: 1376px;
     overflow: hidden;
+    animation: SOR_PopUpContent 0.3s ease-out 0s 1 normal forwards;
 }
 .SOR_PopUpContent .Signin{
     color: #31735E;
@@ -32,7 +38,7 @@
     font-weight: 600;
     line-height: 16.41px;
     padding: 20px 15px;
-
+    white-space: nowrap;
 }
 .SOR_PopUpContent .Register{
     color: #31735E;
@@ -41,7 +47,7 @@
     font-weight: 600;
     line-height: 16.41px;
     padding: 20px 15px;
-
+    white-space: nowrap;
 }
 .SOR_PopUpContent .Signin:hover,
 .SOR_PopUpContent .Register:hover{
