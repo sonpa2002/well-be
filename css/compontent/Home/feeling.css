@@ -16,8 +16,29 @@
     gap: 1rem;
     max-width: 1400px;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
+@media screen and (max-width: 1400px) {
+  .feeling{
+    justify-content: center;
+    align-items: center;
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 1000px) {
+  .feeling{
+    padding: 0 20px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .feeling{
+    padding: 0px;
+  }
+}
 .feeling .title{
     color: white;
     width: 100%;
@@ -30,6 +51,17 @@
     padding-top: 20px;
     text-align:center;
 }
+
+@media screen and (max-width: 1400px) {
+  .slick{
+    width:80%;
+    padding-top: 20px;
+    text-align:center;
+  }
+}
+
+
+
 .slick-slide{
   margin:25px;
 }
@@ -62,6 +94,39 @@
 }
 .slick-dots li button:before{
     content: '' !important;
+}
+
+@media screen and (max-width: 800px) {
+  .slick-slide{
+    margin:15px;
+  }
+  
+  .wrapper .slick-dots li button:before {
+    font-size:16px;
+    color:white;
+    }
+  
+  .slick-arrow{
+    padding: 10px;
+  }
+  
+  .slick-prev{
+      left: -50px !important;
+  }
+  
+  .slick-next{
+      right: -50px !important;
+  }
+  
+  .slick-prev,
+  .slick-next{
+      width: 40px !important;
+      height: 40px !important;
+  }
+  .slick-prev:before,
+  .slick-next:before{
+      font-size: 40px !important;
+  }
 }
 
 
