@@ -1,4 +1,17 @@
+// Header navbar ----------------------------------------------------------------
+const burger = document.querySelector('.header__navbar--burger');
+const navbar = document.querySelector('.header__navbar--content');
 
+burger.addEventListener('click', function(){
+    navbar.classList.add('active');
+})
+
+const closeBtn = document.querySelector('.close__btn')
+closeBtn.addEventListener('click', function(){
+    navbar.classList.remove('active');
+})
+
+// SLIDER DAU TIEN ----------------------------------------------------------------
 const sliderItems = [
     document.querySelector('.sliderMain .Item1'),
     document.querySelector('.sliderMain .Item2'),
@@ -8,16 +21,6 @@ const sliderItems = [
 var arraySlider = ["sliderMain__smallItem Item1", "sliderMain__smallItem Item2", "sliderMain__smallItem Item3", "sliderMain__smallItem Item4"];
 var animateTime = 0.40; var IntervalTime = 1.00; var IntervalSliderID = 0; var previousRandom = null;
 // console.log(Math.floor(IntervalTime*1000));
-
-let adsCourseHeight =  sliderItems[1].querySelector('div .ads-course').getBoundingClientRect().height;
-console.log(adsCourseHeight);
-for (let i = 0; i < sliderItems.length; i++) {
-    let adsCourseobj =  sliderItems[i].querySelector('div .ads-course');
-    adsCourseobj.style.maxHeight =adsCourseHeight.toFixed(2) + "px";
-    adsCourseobj.style.minHeight =adsCourseHeight.toFixed(2) + "px";
-    sliderItems[i].querySelector('div').setAttribute("class", "ads-slider");
-}
-
 function CustomSlider(SetAnimateTime, SetIntervalTime){
     animateTime = SetAnimateTime; IntervalTime = SetIntervalTime;
 
@@ -125,7 +128,6 @@ function fireSlider(SetAnimateTime, SetIntervalTime, arrPhoto, animateStyle){
         }
     }
     else if(animateStyle === "Default"){
-        let divAds;
         if(arrPhoto.length > 0){
             let sliderItemImg;
             for (let i = 0; i < sliderItems.length; i++) {
@@ -139,14 +141,6 @@ function fireSlider(SetAnimateTime, SetIntervalTime, arrPhoto, animateStyle){
     
             for (let i = 0; i < sliderItems.length; i++) {
                 sliderItems[i].setAttribute("class", arraySlider[i]);
-                if(i === 2){
-                    divAds = sliderItems[i].querySelector('div');
-                    divAds.setAttribute("class", "ads-slider-active");
-                }
-                else{
-                    divAds = sliderItems[i].querySelector('div');
-                    divAds.setAttribute("class", "ads-slider");
-                }
             }
         }, Math.floor(IntervalTime*1000))
     }
@@ -163,4 +157,5 @@ function getRandomElement(arr) {
     previousRandom = randomIndex;
     return randomIndex;
 }
-// fireSlider(0.4, 1.00, ["A","B","C","D","E","F","G"], "ChangePhoto");
+
+fireSlider(0.4, 1.00, ["A","B","C","D","E","F","G"], "ChangePhoto");
